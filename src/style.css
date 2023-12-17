@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  background-position: center;
+  background-image: url('../src/assets/background2.jpg');
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  position: relative;
+  overflow: hidden;
+}
+
+body:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgb(2,0,36);
+  background: -moz-linear-gradient(180deg, rgba(2,0,36,0.6330181730895483) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(2,0,36,0.6330181730895483) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(2,0,36,0.6330181730895483) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#000000",GradientType=1);
+}
+
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.weather {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
